@@ -2,7 +2,7 @@ using System;
 
 namespace DWARF.Core.Domain
 {
-    public interface IBaseComponent
+    public interface IBase
     {
         Guid Id { get; set; }
         DateTime CreatedDate { get; set; }

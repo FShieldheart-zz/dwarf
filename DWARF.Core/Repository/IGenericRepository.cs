@@ -7,7 +7,7 @@ using DWARF.Core.Domain;
 
 namespace DWARF.Core.Repository
 {
-    public interface IGenericRepository<T> where T : IBaseComponent
+    public interface IGenericRepository<T> where T : IBase
     {
         T GetSingle(object id);
         IEnumerable<T> GetMany(IEnumerable<string> ids);

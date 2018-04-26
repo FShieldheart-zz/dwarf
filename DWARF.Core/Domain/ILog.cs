@@ -2,7 +2,7 @@ using System;
 
 namespace DWARF.Core.Domain
 {
-    public interface ILog : IBaseComponent
+    public interface ILog : IBase
     {
         string ApplicationName { get; set; }
         string Exception { get; set; }
