@@ -5,11 +5,18 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using DWARF.Core.Repository;
 using DWARF.Domain.Model;
+using DWARF.Repository.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace DWARF.Repository.UnitOfWork
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : Base, new()
     {
+        private DbContext _dbContext;
+        public GenericRepository(MainDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
         public bool Delete(T baseModel, bool persist = false)
         {
             throw new NotImplementedException();

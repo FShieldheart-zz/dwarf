@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 using DWARF.Core.Domain;
 
@@ -14,15 +15,20 @@ namespace DWARF.Domain.Model
             UpdatedDate = updatedDate ?? DateTime.UtcNow;
         }
 
+        [Key]
+        [Required]
         [DataMember(Name = "Id")]
         public Guid Id { get; set; }
 
+        [Required]
         [DataMember(Name = "CreatedDate")]
         public DateTime CreatedDate { get; set; }
 
+        [Required]
         [DataMember(Name = "UpdatedDate")]
         public DateTime UpdatedDate { get; set; }
 
+        [Required]
         public bool IsDeleted { get; set; } = false;
 
         public override string ToString()

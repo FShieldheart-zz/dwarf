@@ -1,7 +1,3 @@
-dotnet restore DWARF.Core
-dotnet restore DWARF.Domain
-dotnet restore DWARF.Repository
-
-dotnet build DWARF.Core
-dotnet build DWARF.Domain
-dotnet build DWARF.Repository
+dotnet restore DWARF.WebAPI
+dotnet build DWARF.WebAPI
+dotnet ef database update -p DWARF.Repository/DWARF.Repository.csproj -s DWARF.Repository/DWARF.Repository.csproj

@@ -2,7 +2,9 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
-    <ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\DWARF.Core\DWARF.Core.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\DWARF.Domain\DWARF.Domain.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\DWARF.Repository\DWARF.Repository.csproj" PrivateAssets="All" />
   </ItemGroup>
 </Project>

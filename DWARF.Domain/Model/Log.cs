@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 using DWARF.Core.Domain;
 
@@ -25,6 +26,7 @@ namespace DWARF.Domain.Model
         [DataMember(Name = "Exception")]
         public string Exception { get; set; }
 
+        [Required]
         [DataMember(Name = "LogDate")]
         public DateTime LogDate { get; set; }
 

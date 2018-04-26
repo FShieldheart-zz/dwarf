@@ -4,3 +4,8 @@ DWARF.Domain/bin
 DWARF.Domain/obj
 DWARF.Repository/bin
 DWARF.Repository/obj
+DWARF.Service/bin
+DWARF.Service/obj
+DWARF.WebAPI/bin
+DWARF.WebAPI/obj
+DWARF.WebAPI/wwwroot
