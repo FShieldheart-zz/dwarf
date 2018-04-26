@@ -2,3 +2,5 @@ DWARF.Core/bin
 DWARF.Core/obj
 DWARF.Domain/bin
 DWARF.Domain/obj
+DWARF.Repository/bin
+DWARF.Repository/obj
